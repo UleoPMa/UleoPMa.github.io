@@ -1,0 +1,291 @@
+@font-face {
+    font-family: 'coolvetica rg';
+    src: url('fonts/coolvetica\ rg.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nasi';
+    src: url('fonts/Nasi.otf') format('truetype');
+}
+
+body{
+    background-color: #e7edea;
+}
+
+#header{
+    color: #fb0c06;
+    width: 100%;
+    z-index: 1000;
+    background-color:#e7edea ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+#marca{
+    font-family: 'Nasi', sans-serif;
+    font-size: 25px;
+    width: 60%;
+    margin-left: 20px;
+}
+
+#menu{
+    font-family: 'coolvetica rg', sans-serif;
+    font-size: 20px;
+    color: #030d4f;
+    display: flex;
+    width: 40%;
+    margin: 0 20px 0 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-op{
+    display: flex;
+    width: 33%;
+    justify-content: center;
+
+}
+
+#presentacion{
+    font-family: 'coolvetica rg', sans-serif;
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    color: #030d4f;
+    align-items: center;
+    position: relative;
+}
+
+
+#texto-presentacion{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#texto-presentacion h2{
+    font-weight: lighter;
+}
+
+
+#fotoMia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+#imagenPersona{
+    width: 35%;
+    height: auto;
+}
+
+#acerca-de-mi{
+    margin: 25px 0 0 0;
+    font-family: 'coolvetica rg', sans-serif;
+    color: rgb(216, 216, 216);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#texto_presentacion{
+    text-align: center;
+    background-color: #fb0c06;
+    padding-bottom: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+
+#mis-habilidades{
+    text-align: center;
+    background-color: #ffc52c;
+    color: #030d4f;
+    width: 90%;
+    position: relative;
+    bottom: 500px;
+    left: 90px;
+    border-radius: 40px;
+    display: flex;
+
+}
+
+.contenedor-hab{
+    width: 33.333%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.imagenHab{
+    width: 100px;
+    height: 100px;
+    background-color: #ceecef;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.imagenHab img{
+    width: 70%;
+}
+
+#lo-que-se{
+    border-right: solid .3px #030d4f;
+}
+
+#lo-que-me-gustaria-saber{
+    border-left: solid .3px #030d4f;
+}
+
+.contenido-hab{
+    margin-top: 30px;
+}
+
+.contenido-hab ul{
+    padding: 0;
+}
+
+.contenido-hab li{
+    list-style: none;
+    margin-top: 20px;
+}
+
+#mis-trabajos-recientes{
+    color: #030d4f;
+    position: relative;
+    bottom: 450px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+}
+
+#contenido-trabajos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+    
+#trabajos{
+    width: 70%;
+    display: flex;
+    align-content: center;
+}
+
+.columna-trabajos{
+    width: 33.33%;
+}
+
+.fila-trabajos{
+    width: 95%;
+    height: 50%;
+    padding-top: 5px;
+
+}
+
+.columna-trabajos img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+#contactame{
+    color: #030d4f;
+    position: relative;
+    bottom: 240px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+}
+
+.button {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color:#030d4f;
+    border: 2px solid #030d4f;
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #fb0c06;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .button:hover::before {
+    scale: 3;
+  }
+  
+  .button:hover {
+    color: #ceecef;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+  }
+  
+  .button:active {
+    scale: 1;
+  }
+
+footer{
+    height: 300px;
+    display: flex;
+    background-color: #fb0c06;
+    color: #ceecef;
+}
+
+#texto-footer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nasi', sans-serif;
+    font-size: 20px;
+}
+
+#redes{
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#redes img{
+    width: 50px;
+    border-radius: 20px;
+}
+
+.logos{
+    width: 10%;
+}
