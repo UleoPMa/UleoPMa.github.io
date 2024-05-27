@@ -40,6 +40,9 @@ body{
     justify-content: center;
     align-items: center;
 }
+.menu p{
+    text-decoration: none;
+}
 
 .menu-op{
     display: flex;
